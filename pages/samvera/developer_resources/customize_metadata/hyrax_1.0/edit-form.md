@@ -126,7 +126,6 @@ For a controlled-value field, you can use something similar to...
 <%= f.input :department, as: :select,
     collection: DepartmentsService.select_all_options,
     include_blank: true,
-    item_helper: method(:include_current_value),
     input_html: { class: 'form-control' }
 %>
 ```
